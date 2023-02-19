@@ -8,7 +8,7 @@ Segmentation module works with mosaic bboxes, i.e. input image is mosaic nuclei 
 Interface example:
 
 <div align="center">
-  <img src=" "/>
+  <img src="images/interface.png"/>
 </div>
 <br>
 
