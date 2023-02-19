@@ -1,0 +1,6 @@
+{
+    "Tumor (big FOV)": "images/tumor_2048.png",
+    "Tumor (small FOV)": "images/tumor_1024.png",
+    "Immune infiltrate": "images/immune_infiltrate.png",
+    "Stroma": "images/stroma.png"
+}

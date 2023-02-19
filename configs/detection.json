@@ -1,0 +1,6 @@
+{
+    "model_path": "",
+    "tile_size": [480, 480],
+    "tile_step": [360, 360],
+    "nms_iou_threshold": 0.15
+}

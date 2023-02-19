@@ -1,0 +1,27 @@
+{
+    "0": {
+        "idx": 0,
+        "name":"Neoplastic cells",
+        "color": [209, 16, 76]
+    },
+    "1": {
+        "idx": 1,
+        "name":"Inflammatic cells",
+        "color": [24, 236, 173]
+    },
+    "2": {
+        "idx": 2,
+        "name":"Connective cells",
+        "color": [255, 174, 66]
+    },
+    "3": {
+        "idx": 3,
+        "name":"Necrotic cells",
+        "color": [241, 89, 248]
+    },
+    "4": {
+        "idx": 4,
+        "name":" Non-neoplastic cells",
+        "color": [109, 73, 230]
+    }
+}

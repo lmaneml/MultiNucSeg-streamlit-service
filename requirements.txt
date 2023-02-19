@@ -1,0 +1,7 @@
+opencv-python
+numpy==1.21.1 
+streamlit==1.16.0 
+onnxruntime-gpu==1.8.0 
+stqdm==0.0.5
+albumentations==1.2.0
+plotly==5.13.0
