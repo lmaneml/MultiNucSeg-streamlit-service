@@ -108,7 +108,6 @@ class BboxTiler:
             x1 = x2
         return img_mosaic, transformed_bboxs    
     
-
     def mosaic_split(self):
         '''Function to split the data into dataset'''
         for idxs in self.bboxes_split:

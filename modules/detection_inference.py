@@ -23,7 +23,6 @@ CELLS_DICT = load_metadata('./configs/classes.json', cell_info=True)
 NAMES_DICT = {x['idx']:x['name'] for x in CELLS_DICT.values()}
 COLORS = {x['name']:x['color'] for x in CELLS_DICT.values()}
 
-
 class ObjectDetection:
 
     def __init__(self, model_path):
@@ -103,7 +102,6 @@ class ObjectDetection:
         coords = np.delete(coords, drop_list, 0)
         return coords
 
-
     @st.cache(allow_output_mutation=True)
     def load_onnx_model(self, model_path, cuda):
         if os.path.exists(model_path):
@@ -120,7 +118,6 @@ class ObjectDetection:
         return outputs
 
     def onnx_tile_inference(self, session, tiler_loader):
-
         outname = [i.name for i in session.get_outputs()]
         inname = [i.name for i in session.get_inputs()]
         result = []
@@ -131,7 +128,6 @@ class ObjectDetection:
             outputs = session.run(outname, inp)[0]
             result.append([outputs, coords_batch])
         return result
-
 
     def plot_bbox(self, bbox_row, image, fulfill):
         edge = 3 if not fulfill else -1
@@ -156,7 +152,6 @@ class ObjectDetection:
             name = NAMES_DICT[cls_id]
             color = COLORS[name]
             cv2.rectangle(plt_img,box[:2],box[2:],color,edge)
-
         return plt_img
 
     def calculate_subtypes(self, bboxes):
@@ -170,5 +165,4 @@ class ObjectDetection:
             name = NAMES_DICT[i]
             counts_dict[name] = counts[i]
             props_dict[name] = round(props[i]*100, 2)
-
         return counts_dict, props_dict

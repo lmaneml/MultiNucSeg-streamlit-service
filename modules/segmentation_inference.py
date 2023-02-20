@@ -22,10 +22,8 @@ CELLS_DICT = load_metadata('./configs/classes.json', cell_info=True)
 NAMES_DICT = {x['idx']:x['name'] for x in CELLS_DICT.values()}
 COLORS = {x['name']:x['color'] for x in CELLS_DICT.values()}
 
-
 class ObjectSegmentation:
     def __init__(self, model_path: str):
-
         self.nucl_size_px = 32
         self.matrix_size = [4,4]
         self.nn_input_size = [128,128]
@@ -36,7 +34,6 @@ class ObjectSegmentation:
         self.output_result = []
 
     def tile_image_bbox(self, image, bboxes):
-
         tiler = BboxTiler(bboxes, 
                           image, 
                           nucleus_size=self.nucl_size_px, 

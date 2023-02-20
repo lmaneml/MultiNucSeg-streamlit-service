@@ -10,7 +10,6 @@ def load_palette(palette_path):
     palette = cv2.cvtColor(palette, cv2.COLOR_BGR2RGB)
     return palette
 
-
 class SidebarGUI:
     
     def __init__(self):
@@ -20,7 +19,6 @@ class SidebarGUI:
         return self.sidebar_init_config()
 
     def sidebar_init_config(self):
-        
         st.sidebar.title("Prediction settings")
         st.sidebar.markdown("## Image source")
 

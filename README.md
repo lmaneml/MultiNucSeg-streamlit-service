@@ -1,10 +1,10 @@
-MultiNucSeg is a worflow for multiclass nuclei detection and segmentation of H&E images. 
-This repository includes streamlit web service. Inference is based on ONNX format.
-For correct work it requires two models:
+MultiNucSeg is a multiclass nuclei detection and segmentation pipeline for H&E images. 
+This repository includes a streamlit web service. Inference is based on the ONNX format. 
+For correct work, it requires two models:
 * Multiclass nuclei detection 
 * Nuclei segmentation
-Segmentation module works with mosaic bboxes, i.e. input image is mosaic nuclei crops from detection module.
 
+Segmentation module works with mosaic bboxes, i.e. input image includes nuclei crops from the detection module.
 Interface example:
 
 <div align="center">
@@ -14,13 +14,13 @@ Interface example:
 
 ## How to run
 
-With default models:
+Default models:
 ```
 streamlit run main.py 
 ```
-With custom models:
+Custom models:
 ```
 streamlit run main.py -- --detection_model 'model_path' --segmentation_model 'model_path'
 ```
 
-# Models will be published later
+## Models will be published later

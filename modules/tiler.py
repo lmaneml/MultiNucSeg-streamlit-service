@@ -122,4 +122,3 @@ class ImageSlicer:
                     tile = np.expand_dims(tile, axis=-1)
 
             yield tile, coords
-

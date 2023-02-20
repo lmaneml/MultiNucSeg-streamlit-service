@@ -14,7 +14,6 @@ def load_metadata(path, cell_info=False):
 
 DEMO_IMAGES = load_metadata('./configs/demo_images.json')
 
-
 class DataStore:
 
     def __init__(self, gui_sidebar_params):
@@ -36,7 +35,6 @@ class DataStore:
             self.image = load_demo_image(self.demo_image_path)
 
         elif self.image_source == 'Upload':
-
             @st.cache(allow_output_mutation=True)
             def load_external_image(image_file):
                 image = image_file.getvalue()
